@@ -71,6 +71,8 @@ oss-community-files/
 oss-publish-github/
 oss-release-management/
 oss-maintainer-operations/
+scripts/
+tests/
 shared/
   references/
   assets/
@@ -102,6 +104,25 @@ Use the relevant skill for the stage you are in. For example:
 - use `oss-repo-audit` to check whether a repo meets the open-source baseline
 - use `oss-community-files` to generate root docs and `.github` templates
 - use `oss-publish-github` to prepare repository settings, metadata, and release drafts
+
+## 本地验证 / Local Verification
+
+当前仓库已经把常用门禁收敛到 [`scripts/verify_project.py`](./scripts/verify_project.py)：
+
+```bash
+python3 scripts/verify_project.py local
+python3 scripts/verify_project.py local --require-clean-worktree
+python3 scripts/verify_project.py github \
+  --repo hackdion/github-open-source-suite \
+  --expect-public \
+  --expect-issues-enabled \
+  --expect-discussions-enabled \
+  --expect-private-vulnerability-reporting \
+  --release-tag v0.1.2 \
+  --expect-release-published
+```
+
+配套单元测试见 [`tests/test_verify_project.py`](./tests/test_verify_project.py)。
 
 ## 首发版草稿 / Initial Release Draft
 
