@@ -11,7 +11,7 @@ Use this skill to prepare the repository for public GitHub publication. It shoul
 
 ## Workflow
 
-1. Confirm the repository is bootstrapped and audited.
+1. Confirm the repository is bootstrapped, audited, and past the community-surface threshold.
 2. Collect all blocking publication inputs in one pass.
 3. Verify local publish prerequisites.
 4. Draft repository metadata and publication checklist items.
@@ -50,9 +50,9 @@ If the maintainer has known defaults, restate them once and continue. Do not int
 
 If any of these are missing, say so and recommend the right suite skill:
 
-- no git repository -> `oss-repo-bootstrap`
-- no baseline audit -> `oss-repo-audit`
-- important community files missing -> `oss-community-files`
+- no git repository or no commits yet -> `oss-repo-bootstrap`
+- no baseline audit or readiness state is unknown -> `oss-repo-audit`
+- important community files or maintainer routing are missing -> `oss-community-files`
 
 ## Default Actions
 
@@ -65,10 +65,12 @@ Low-risk actions this skill may perform automatically:
 
 When evaluating publication deltas:
 
+- local validator success, internal milestone wording, or "works for me locally" are not publication signals by themselves
 - distinguish content parity from git-history divergence
 - treat content parity as publish-ready even if ancestry shape differs, unless the maintainer explicitly requires linear history
 - treat internal TODO markers as non-blocking unless they affect user-facing docs or security posture
 - prefer incremental recommendations when a repository already has baseline community and release files
+- do not stretch this skill to repos that still lack a first commit or basic public support/security routing; hand them back to earlier suite stages instead
 
 Actions that require explicit confirmation:
 

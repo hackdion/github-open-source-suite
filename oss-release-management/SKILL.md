@@ -35,6 +35,7 @@ Use:
 - Prefer `0.x` framing for early projects unless there is a strong reason not to.
 - Do not label a release as stable when onboarding, docs, or scope are still obviously unstable.
 - Keep "Known limitations" visible when the project is young.
+- Treat passing local validators or internal "local V1 complete" style milestones as supporting signals only, never as standalone release-readiness evidence.
 - Avoid promising compatibility guarantees that are not documented elsewhere.
 - Keep release guidance durable. Avoid hardcoding one-time version numbers, fixed push commands, or fixed release-note paths in long-lived release docs.
 
@@ -47,6 +48,7 @@ If the repository has not been audited or publication prep is incomplete, recomm
 - `oss-publish-github`
 
 Before release drafting, make sure the blocking publication inputs were already collected in one pass. If they were not, direct the flow through `oss-publish-github` instead of asking scattered follow-up questions.
+If the repository is only locally complete, still lacks a first public-ready community surface, or still needs GitHub publication prep, stop and route back to the earlier suite skills instead of drafting a release prematurely.
 
 ## Output Expectations
 

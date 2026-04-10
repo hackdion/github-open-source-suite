@@ -115,15 +115,67 @@ Minimum file emphasis:
 - issue forms
 - security route when the software is runnable by others
 
+## Readiness states
+
+Score repository readiness separately from repository type.
+
+### Local-only
+
+Signals:
+
+- no commits yet
+- most files still untracked
+- internal milestone wording such as "local V1 complete"
+- local validators or tests may pass, but public-facing community routing is missing
+
+### Repo-foundation-ready
+
+Signals:
+
+- git repo exists
+- at least one meaningful commit exists
+- basic hygiene such as `.gitignore` is present
+- public community surface is still incomplete
+
+### Community-surface-ready
+
+Signals:
+
+- minimum public-facing files are present for the repo type
+- maintainer routing for support and security is at least drafted
+- obvious placeholders, private references, and secret risks were already checked
+- GitHub publication metadata or release work may still be incomplete
+
+### Publish-ready
+
+Signals:
+
+- community surface is in good shape
+- blocking publication inputs are known
+- the next blockers are mostly GitHub-facing actions or confirmations
+
+### Release-ready
+
+Signals:
+
+- publish prep is complete
+- version framing and release notes path are chosen
+- remaining blockers are release execution or remote confirmation gates
+
 ## Classification rules
 
 - Pick the primary type first, then note secondary traits.
+- Score readiness separately from type. A skill repo, plugin, or project can still be only local-only.
 - Do not generate every possible file just because a repository could use them.
 - If the project is tiny, keep the file set minimal but still legally and operationally clear.
 - If the repository exposes runnable software or accepts credentials, prefer including `SECURITY.md`.
+- Passing local tests or validators does not mean the repository is publish-ready.
+- Having a `README` or `LICENSE` alone does not mean the community surface is complete.
+- A repo with no commits yet should not be treated as publish-ready even if the files already exist.
 
 ## Use with the suite
 
 - `oss-repo-bootstrap` uses the type to suggest `.gitignore`.
-- `oss-repo-audit` uses the type to score missing files.
-- `oss-community-files` uses the type to choose template emphasis and examples.
+- `oss-repo-audit` uses the type and readiness state to score missing files and route the next handoff.
+- `oss-community-files` uses the type and readiness state to choose template emphasis and examples.
+- `oss-publish-github` uses readiness state to reject premature publication prep.
