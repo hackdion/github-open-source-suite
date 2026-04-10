@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Maintainer Operations"
+  short_description: "Set up maintainer operations"
+  default_prompt: "Use $oss-maintainer-operations to define sustainable issue, PR, support, and security workflows for this repository."

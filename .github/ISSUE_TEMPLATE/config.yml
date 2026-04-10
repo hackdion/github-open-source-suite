@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Support discussions / 支持讨论"
+    url: "https://github.com/hackdion/github-open-source-suite/discussions"
+    about: "Use Discussions for questions, usage help, and workflow conversations. / 提问、使用交流和流程讨论请走 Discussions。"
+  - name: "Security reporting / 安全报告"
+    url: "https://github.com/hackdion/github-open-source-suite/security"
+    about: "Use the repository security area and private reporting path when available. / 安全问题请优先走仓库安全页与私密报告入口。"

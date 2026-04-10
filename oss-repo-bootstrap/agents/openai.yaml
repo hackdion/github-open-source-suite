@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Repo Bootstrap"
+  short_description: "Bootstrap local repos for GitHub"
+  default_prompt: "Use $oss-repo-bootstrap to turn this local folder into a git-backed open-source-ready repository."

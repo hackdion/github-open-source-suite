@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Community Files"
+  short_description: "Create GitHub health files"
+  default_prompt: "Use $oss-community-files to generate repository-aware community health files and templates for this project."

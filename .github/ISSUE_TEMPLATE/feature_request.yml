@@ -1,0 +1,26 @@
+name: "Feature request / 功能建议"
+description: "Suggest an improvement for this repository / 提交改进建议"
+title: "[Feature]: "
+labels:
+  - "enhancement"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem are you trying to solve? / 你想解决什么问题？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "What would you like to happen? / 你希望发生什么？"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered / 已考虑的替代方案"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional context / 补充信息"

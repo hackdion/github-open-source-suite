@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Publish GitHub"
+  short_description: "Prepare GitHub publication"
+  default_prompt: "Use $oss-publish-github to prepare this repository for GitHub publication and draft the required metadata."

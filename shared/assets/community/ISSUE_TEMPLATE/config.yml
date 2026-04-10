@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Support"
+    url: "{{SUPPORT_URL}}"
+    about: "Use this channel for questions and troubleshooting instead of opening a bug report."
+  - name: "Security reporting"
+    url: "{{SECURITY_URL}}"
+    about: "Use this channel to report vulnerabilities privately."

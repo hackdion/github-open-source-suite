@@ -1,0 +1,35 @@
+name: "Bug report / 缺陷反馈"
+description: "Report a reproducible bug in this repository / 报告一个可复现的问题"
+title: "[Bug]: "
+labels:
+  - "bug"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "What happened? / 发生了什么？"
+      description: "Describe the bug and what you expected instead. / 请描述实际结果和预期结果。"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Steps to reproduce / 复现步骤"
+      description: "Share the smallest set of steps that reproduces the issue. / 请提供最小可复现步骤。"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: "Version or commit / 版本或提交"
+      description: "Share the version, tag, or commit if known. / 如已知，请提供版本号、标签或提交号。"
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment / 环境信息"
+      description: "OS, runtime, toolchain, or other relevant details. / 操作系统、运行时、工具链等。"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional context / 补充信息"
+      description: "Logs, screenshots, or any extra notes. / 日志、截图或其他补充说明。"

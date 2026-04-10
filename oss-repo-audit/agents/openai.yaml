@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Repo Audit"
+  short_description: "Audit open-source readiness"
+  default_prompt: "Use $oss-repo-audit to inspect this repository and list the gaps before publishing it on GitHub."

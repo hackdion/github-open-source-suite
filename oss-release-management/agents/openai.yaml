@@ -1,0 +1,4 @@
+interface:
+  display_name: "OSS Release Management"
+  short_description: "Standardize project releases"
+  default_prompt: "Use $oss-release-management to prepare a release checklist, version notes, and GitHub release draft for this project."
