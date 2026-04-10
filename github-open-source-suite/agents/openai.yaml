@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Open Source Suite"
+  short_description: "Route the full OSS publish workflow"
+  default_prompt: "Use $github-open-source-suite to take this project from local completion to GitHub open-source release and maintainer setup."

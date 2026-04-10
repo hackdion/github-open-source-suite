@@ -25,6 +25,7 @@ REQUIRED_SPECS = [
     "开发路线图.md",
 ]
 REQUIRED_SKILLS = [
+    "github-open-source-suite",
     "oss-repo-bootstrap",
     "oss-repo-audit",
     "oss-community-files",

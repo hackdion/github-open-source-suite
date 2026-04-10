@@ -12,38 +12,33 @@ A Codex skill suite for turning nearly finished local work into GitHub-ready ope
 - README、LICENSE、SECURITY、SUPPORT、issue 模板、PR 模板这些文件总是临时拼装
 - 发版和后期维护经常缺少统一标准
 
-这个仓库把这些步骤沉淀成 6 个可复用技能：
+这个仓库把这些步骤沉淀成 1 个单入口技能 + 6 个阶段技能：
 
-1. `oss-repo-bootstrap`
-2. `oss-repo-audit`
-3. `oss-community-files`
-4. `oss-publish-github`
-5. `oss-release-management`
-6. `oss-maintainer-operations`
+1. `github-open-source-suite`
+2. `oss-repo-bootstrap`
+3. `oss-repo-audit`
+4. `oss-community-files`
+5. `oss-publish-github`
+6. `oss-release-management`
+7. `oss-maintainer-operations`
 
 ## English Overview
 
-This repository packages a six-skill workflow for open-source publication on GitHub. It is intended for skill repositories, MCP servers, plugins, libraries, CLI tools, and small-to-medium projects that are already mostly built and now need a repeatable publishing and maintenance path.
+This repository packages a single-entry skill plus six stage skills for open-source publication on GitHub. It is intended for skill repositories, MCP servers, plugins, libraries, CLI tools, and small-to-medium projects that are already mostly built and now need a repeatable publishing and maintenance path.
 
 ## 工作流 / Workflow
 
 默认推荐流程：
 
-1. 先把本地目录整理成可管理的仓库
-2. 做开源体检和仓库类型判断
-3. 生成或补齐社区健康文件
-4. 准备 GitHub 发布信息与仓库设置
-5. 草拟首个 release
-6. 建立后续维护规则
+1. 优先调用 `github-open-source-suite`
+2. 由它自动判断当前应该进入哪个阶段技能
+3. 只有在你明确想手动分阶段时，再直接调用具体 `oss-*` 技能
 
 Recommended flow:
 
-1. bootstrap the local directory as a repository
-2. audit open-source readiness
-3. generate community health files
-4. prepare GitHub publication details and settings
-5. draft the first release
-6. define maintainer operations
+1. start with `github-open-source-suite`
+2. let it choose the correct stage skill automatically
+3. call the individual `oss-*` skills directly only when you want manual stage control
 
 ## 仓库默认配置 / Repository Defaults
 
@@ -71,6 +66,7 @@ oss-community-files/
 oss-publish-github/
 oss-release-management/
 oss-maintainer-operations/
+github-open-source-suite/
 scripts/
 tests/
 shared/
@@ -93,13 +89,21 @@ shared/
 
 ## 使用方式 / How To Use
 
-在 Codex 中按需调用对应技能。例如：
+默认优先调用单入口技能：
+
+- 用 `github-open-source-suite` 让套件自动决定当前该走哪个阶段
+
+你只在需要手动指定阶段时，再调用对应技能。例如：
 
 - 用 `oss-repo-audit` 检查仓库是否达到开源基线
 - 用 `oss-community-files` 生成根级开源文件和 `.github` 模板
 - 用 `oss-publish-github` 准备仓库设置、发布元数据与 release 草稿
 
-Use the relevant skill for the stage you are in. For example:
+Use the suite entry skill by default:
+
+- use `github-open-source-suite` to let the suite choose the correct stage automatically
+
+Only use the individual stage skills when you want manual control. For example:
 
 - use `oss-repo-audit` to check whether a repo meets the open-source baseline
 - use `oss-community-files` to generate root docs and `.github` templates
