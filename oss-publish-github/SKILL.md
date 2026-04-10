@@ -63,6 +63,13 @@ Low-risk actions this skill may perform automatically:
 - draft release checklist text
 - draft first-release notes
 
+When evaluating publication deltas:
+
+- distinguish content parity from git-history divergence
+- treat content parity as publish-ready even if ancestry shape differs, unless the maintainer explicitly requires linear history
+- treat internal TODO markers as non-blocking unless they affect user-facing docs or security posture
+- prefer incremental recommendations when a repository already has baseline community and release files
+
 Actions that require explicit confirmation:
 
 - creating a remote repository

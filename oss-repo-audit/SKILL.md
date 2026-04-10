@@ -32,6 +32,7 @@ Load `../shared/references/release-and-versioning-guide.md` only when release-re
 - Prefer the minimum sustainable file set for the repo type.
 - Flag missing legal or operational essentials before cosmetic improvements.
 - Distinguish blockers from nice-to-haves.
+- Distinguish hard blockers from policy risks. Example: security reporting that only routes to public issues should be flagged as a policy risk even if baseline files exist.
 - Name any placeholders that must be replaced before publication.
 - Call out support or policy wording that promises more than the maintainer can sustain.
 

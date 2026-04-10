@@ -36,6 +36,7 @@ Use:
 - Do not label a release as stable when onboarding, docs, or scope are still obviously unstable.
 - Keep "Known limitations" visible when the project is young.
 - Avoid promising compatibility guarantees that are not documented elsewhere.
+- Keep release guidance durable. Avoid hardcoding one-time version numbers, fixed push commands, or fixed release-note paths in long-lived release docs.
 
 ## Preconditions
 
