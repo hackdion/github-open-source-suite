@@ -5,6 +5,7 @@ All notable changes to this repository will be documented in this file.
 ## [Unreleased]
 
 - Ongoing refinement of the six-skill suite, shared references, and shared templates.
+- Added initial SpecForge V3 project governance documents under `specs/`.
 
 ## [0.1.2] - Multi-Repo Readiness Refinement
 

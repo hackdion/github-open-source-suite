@@ -60,6 +60,7 @@ Recommended flow:
 ## 目录结构 / Repository Structure
 
 ```text
+specs/
 docs/
   superpowers/
     specs/
@@ -74,6 +75,19 @@ shared/
   references/
   assets/
 ```
+
+## SpecForge 项目文档 / SpecForge Project Docs
+
+当前仓库已经补齐最小 SpecForge V3 项目资产，见 [`specs/`](./specs/)：
+
+- `PROJECT-CONTEXT.md`
+- `GUARDRAILS.md`
+- `已澄清的项目描述.md`
+- `产品概述.md`
+- `技术栈.md`
+- `项目结构.md`
+- `开发规范.md`
+- `开发路线图.md`
 
 ## 使用方式 / How To Use
 
